@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cape Investment Sierra.</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/3.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/product.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+ <header id="header"></header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>Product</h1>
+        <p>Delivering fresh agricultural products through sustainable farming practices, modern livestock management, and high-quality production standards.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Product</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <br/>
+
+  <section class="section1">
+  <div class="container1">
+
+    <h2 class="title">Agriculture Products</h2>
+
+    <div class="row" id="product-row">
+
+      <!-- Existing cards -->
+      <div class="col-md-4">
+        <div class="card-box">
+          <h4>Fresh from the Farm</h4>
+          <img src="https://img.freepik.com/premium-photo/woman-farmer-holds-harvest-vegetables-her-hands-selective-focus-food_73944-35038.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn-see" id="seeMoreBtn">See More</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-box card2">
+          <h4>Fresh Vegetables</h4>
+          <img src="https://img.freepik.com/premium-photo/organic-food-background-vegetables-basket_135427-233.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-box card3">
+          <h4>Farm Factory</h4>
+          <img src="https://img.freepik.com/premium-photo/sugar-beet-farm-with-processing-plant-serene-industrial-landscape_1271419-39353.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const seeMoreBtn = document.getElementById('seeMoreBtn');
+  const productRow = document.getElementById('product-row');
+
+  seeMoreBtn.addEventListener('click', function() {
+    const moreCards = `
+      <div class="col-md-4">
+        <div class="card-box">
+          <h4>Organic Fruits</h4>
+          <img src="https://img.freepik.com/premium-photo/healthy-tasty-fruits-vegetables_135427-4545.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>Fresh organic fruits directly from the farm.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h4>Dairy Products</h4>
+          <img src="https://img.freepik.com/premium-photo/various-dairy-products-displayed-vibrant-green-cloth-suitable-food-nutrition-concepts_153912-62128.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>Pure dairy products with high nutritional value.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h4>Farm Tools</h4>
+          <img src="https://img.freepik.com/premium-photo/gardening-tools-straw-hat-grass-garden_422666-1660.jpg?ga=GA1.1.1001809180.1770619566&semt=ais_hybrid&w=740&q=80">
+          <p>High quality farm tools for better productivity.</p>
+        </div>
+      </div>
+    `;
+    productRow.insertAdjacentHTML('beforeend', moreCards);
+    seeMoreBtn.style.display = 'none'; // hide button after click
+  });
+</script>
+
+  </main>
+
+ <footer id="footer"></footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/Common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body{
+font-family:Arial;
+}
+
+.section1 {
+  background: url('assets/img/product.png') center center / cover no-repeat;
+  color: white;
+  padding: 30px 30px 170px 30px;
+  padding-top: 60px;
+}
+
+.title{
+font-size:42px;
+font-weight:600;
+margin-bottom:30px;
+color: #fff;
+}
+
+.card-box{
+text-align:center;
+position:relative;
+}
+
+.card-box img{
+width:100%;
+height:260px;
+object-fit:cover;
+/* border-radius:25px; */
+margin-bottom:20px;
+border-radius: 20px; /* Rounded corners like your screenshot */
+    border: 15px solid rgba(255, 255, 255, 0.30); /* Thin white border with 15% opacity */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.card-box img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-box p{
+color:#dcdcdc;
+font-size:15px;
+}
+
+.card-box h4{
+color:#fff;
+}
+
+.btn-see{
+background:#e8e8e8;
+border:none;
+padding:10px 30px;
+border-radius:12px;
+margin-top:15px;
+}
+
+/* Card zigzag effect */
+.row .col-md-4:nth-child(3n+1) .card-box { top: 0; }
+.row .col-md-4:nth-child(3n+2) .card-box { top: 80px; }
+.row .col-md-4:nth-child(3n+3) .card-box { top: 160px; }
