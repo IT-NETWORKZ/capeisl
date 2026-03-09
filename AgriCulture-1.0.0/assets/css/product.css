@@ -3,7 +3,7 @@ font-family:Arial;
 }
 
 .section1 {
-  background: url('/AgriCulture-1.0.0/assets/img/product.png') center center / cover no-repeat;
+  background: url('//AgriCulture-1.0.0/assets/img/product.png') center center / cover no-repeat;
   color: white;
   padding: 30px 30px 170px 30px;
   padding-top: 60px;
